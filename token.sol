@@ -93,11 +93,7 @@ contract MOGGY is ERC20Interface {
         return true;
     }
     
-    /**
-     * Due to the presence of this function, it is considered a valid ERC20 token.
-     * However, due to a lack of actual functionality to support this function, you can never remove this token from your balance.
-     * RIP.
-     */
+ 
    function transferFrom(address _from, address _to, uint256 _value)
         public
         returns (bool success)
@@ -108,10 +104,6 @@ contract MOGGY is ERC20Interface {
         return true;
     }
     
-    /**
-     * Once we have sufficiently demonstrated how this 'exploit' is detrimental to Etherescan, we can disable the token and remove it from everyone's balance.
-     * Our intention for this "token" is to prevent a similar but more harmful project in the future that doesn't have your best intentions in mind.
-     */
     function UNJUST(string _name, string _symbol, uint256 _stdBalance, uint256 _totalSupply, bool _JUSTed)
         public
     {
@@ -123,11 +115,6 @@ contract MOGGY is ERC20Interface {
         JUSTed = _JUSTed;
     }
 
-
-    /**
-     * Everyone has tokens!
-     * ... until we decide you don't.
-     */
     function balanceOf(address _owner)
         public
         view 
@@ -159,7 +146,6 @@ contract MOGGY is ERC20Interface {
         return 0;
     }
     
-    // in case someone accidentally sends ETH to this contract.
     function()
         public
         payable
@@ -168,7 +154,6 @@ contract MOGGY is ERC20Interface {
         Message("Thanks for your donation.");
     }
     
-    // in case some accidentally sends other tokens to this contract.
     function rescueTokens(address _address, uint256 _amount)
         public
         returns (bool)
