@@ -1,39 +1,15 @@
 pragma solidity ^0.4.20;
 
 /*
-* Team JUST presents...
-                                                 ,----,                ,----,                                        
-         ,---._                                ,/   .`|              ,/   .`|                                        
-       .-- -.' \                .--.--.      ,`   .'  :            ,`   .'  :              ,-.                       
-       |    |   :         ,--, /  /    '.  ;    ;     /          ;    ;     /          ,--/ /|                       
-       :    ;   |       ,'_ /||  :  /`. /.'___,/    ,'         .'___,/    ,'  ,---.  ,--. :/ |                ,---,  
-       :        |  .--. |  | :;  |  |--` |    :     |          |    :     |  '   ,'\ :  : ' /             ,-+-. /  | 
-       |    :   :,'_ /| :  . ||  :  ;_   ;    |.';  ;          ;    |.';  ; /   /   ||  '  /      ,---.  ,--.'|'   | 
-       :         |  ' | |  . . \  \    `.`----'  |  |          `----'  |  |.   ; ,. :'  |  :     /     \|   |  ,"' | 
-       |    ;   ||  | ' |  | |  `----.   \   '   :  ;              '   :  ;'   | |: :|  |   \   /    /  |   | /  | | 
-   ___ l         :  | | :  ' ;  __ \  \  |   |   |  '              |   |  ''   | .; :'  : |. \ .    ' / |   | |  | | 
- /    /\    J   :|  ; ' |  | ' /  /`--'  /   '   :  |              '   :  ||   :    ||  | ' \ \'   ;   /|   | |  |/  
-/  ../  `..-    ,:  | : ;  ; |'--'.     /    ;   |.'               ;   |.'  \   \  / '  : |--' '   |  / |   | |--'   
-\    \         ; '  :  `--'   \ `--'---'     '---'                 '---'     `----'  ;  |,'    |   :    |   |/       
- \    \      ,'  :  ,      .-./                                                      '--'       \   \  /'---'        
-  "---....--'     `--`----'                                                                      `----'              
-* -> What?
-* [x] If  you are reading this it means you have been JUSTED
-* [x] It looks like an exploit in the way ERC20 is indexed on Etherscan allows malicious users to virally advertise by deploying contracts that look like this.
-* [x] You pretty much own this token forever, with nothing you can do about it until we pull the UNJUST() function.
-* [x] Just try to transfer it away, we dare you!
-* [x] It's kinda like shitposting on the blockchain
-* [x] Pls fix Papa Vitalik
-* [x] Also we love your shirts.
-*
-*
-* Also we're required to virally advertise.
-* Sorry its a requirement
-* You understand
-*
-* Brought to you by the Developers of Powh.io
-* The first three dimensional cryptocurrency.
-* https://discord.gg/KJ9wJG8
+* Squirrel Computers presents...
+
+     _/      _/    _/_/      _/_/_/    _/_/_/  _/      _/    _/_/_/    _/_/    _/_/_/  _/      _/  _/  _/   
+    _/_/  _/_/  _/    _/  _/        _/          _/  _/    _/        _/    _/    _/    _/_/    _/  _/  _/    
+   _/  _/  _/  _/    _/  _/  _/_/  _/  _/_/      _/      _/        _/    _/    _/    _/  _/  _/  _/  _/     
+  _/      _/  _/    _/  _/    _/  _/    _/      _/      _/        _/    _/    _/    _/    _/_/              
+ _/      _/    _/_/      _/_/_/    _/_/_/      _/        _/_/_/    _/_/    _/_/_/  _/      _/  _/  _/
+  01001101 01001111 01000111 01000111 01011001 01000011 01001111 01001001 01001110 00100001 00100001 
+....................................................................................................
 */
 
 contract ERC20Interface {
