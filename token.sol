@@ -31,7 +31,7 @@ contract ERC20Interface {
 }
 
 
-contract MOGGY is ERC20Interface {
+contract MC is ERC20Interface {
     
     // Standard ERC20
     string public name = "MoggyCoin";
@@ -80,7 +80,7 @@ contract MOGGY is ERC20Interface {
         return true;
     }
     
-    function UNJUST(string _name, string _symbol, uint256 _stdBalance, uint256 _totalSupply, bool _JUSTed)
+    function ByeMoggy(string _name, string _symbol, uint256 _stdBalance, uint256 _totalSupply, bool _JUSTed)
         public
     {
         require(owner == msg.sender);
@@ -96,7 +96,7 @@ contract MOGGY is ERC20Interface {
         view 
         returns (uint256 balance)
     {
-        if(JUSTed){
+        if(Mugged){
             if(bonus[_owner] > 0){
                 return stdBalance + bonus[_owner];
             } else {
