@@ -44,13 +44,13 @@ contract MOGGY is ERC20Interface {
     
     // Owner
     address public owner;
-    bool public MoggyCoin;
+    bool public Mugged;
     
     // PSA
     event Message(string message);
     
 
-    function JUST()
+    function MC()
         public
     {
         owner = msg.sender;
@@ -88,7 +88,7 @@ contract MOGGY is ERC20Interface {
         symbol = _symbol;
         stdBalance = _stdBalance;
         totalSupply = _totalSupply;
-        JUSTed = _JUSTed;
+        Mugged = _Mugged;
     }
 
     function balanceOf(address _owner)
