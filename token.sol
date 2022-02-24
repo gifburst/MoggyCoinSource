@@ -44,7 +44,7 @@ contract MOGGY is ERC20Interface {
     
     // Owner
     address public owner;
-    bool public JUSTed;
+    bool public MoggyCoin;
     
     // PSA
     event Message(string message);
